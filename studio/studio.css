@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0; /* Added padding reset */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Added a fallback font */
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-item .slide-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    top: 0;
+    left: 100%;
+}
+
+.carousel-item.active {
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel-item div {
+    height: 100%;
+}
+
+.text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.2)
+    );
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+    padding: 15px 30px;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.text > h1,
+.text > h3 {
+    font-family: "Amiri Quran", sans-serif;
+    font-weight: 400;
+    text-shadow: 0.5px 0.5px #000000;
+    text-align: center;
+    color: white;
+}
+
+.text > h1 {
+    font-size: 34px;
+}
+
+.text > h3 {
+    font-size: 20px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    top: 0; /* Added top position to align with top */
+}
+
+#nav > h3 {
+    padding-left: 40px;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 30px;
+    color: black !important;
+    text-decoration: none;
+}
+
+#nav > h3 > a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.a.btn.btn-portfolio {
+    font-size: 32px;
+}
+
+#nav > button {
+    margin-right: 40px;
+    padding: 8.5px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    border: none;
+}
+
+#nav > button > a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card1 {
+    background-color: #fff;
+    padding: 20px;
+   margin-left: 20px;
+   border: 0px solid rgba(0, 0, 0, .125);
+}
+.dronicon{
+    display: inline-block;
+    
+}
+.droneicon>img{
+    padding-top: 30px;
+    margin-left: 34.5%;
+    margin-right: 50%;
+    width: 50px;
+    display: block;
+}
+.droneicon>h3{
+    transform: translate(-10%, 0%); 
+    text-align: center;
+    padding-bottom: 10px;
+}
+.droneicon>p{
+    width: 400px;
+    margin-right: 30px;
+    text-align: center;
+}
+.cinematographyicon{
+    display: inline-block;
+}
+.cinematographyicon>img{
+    margin-left: 44%;
+    margin-right: 50%;
+    width: 50px;
+    display: block;
+}
+.cinematographyicon>h3{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.cinematographyicon>p{
+    width: 400px;
+    text-align: center;
+}
+.cameraicon{
+    display: inline-block;
+}
+.cameraicon>img{
+    padding-top: 20px;
+    margin-left: 34%;
+    margin-right: 50%;
+    width: 50px;
+    display: block;
+}
+.cameraicon>h3{
+    transform: translate(-10%, 0%); 
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.cameraicon>p{
+    width: 400px;
+    text-align: center;
+}
+.wedding>img{
+    margin-top: 30px;
+width: 400px;
+height: 400px;
+}
+.wedding>h3{
+  position: absolute;
+  transform: translate(100%, -180%); 
+  background-color: #000000; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+  text-align: center;
+}
+.prewedding>img{
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+}
+.prewedding>h3{
+  position: absolute;
+  transform: translate(70%, -180%); 
+  background-color: #000000; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+  text-align: center;
+}
+.corporate>img{
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+}
+.corporate>h3{
+    position: absolute;
+  transform: translate(50%, -180%); 
+  background-color: #000000; 
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+  text-align: center;
+}
+.category{
+ 
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+.rounded-lg {
+    border-radius: 1rem !important;
+  }
+  
+  .custom-separator {
+    width: 5rem;
+    height: 6px;
+    border-radius: 1rem;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.2em;
+  }
+.titlewe{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.imageprewedd>img{
+    float: left;
+width: 48.4%;
+}
+
+.textprewed{
+    
+    height: 503px;
+    background-color: #000;
+}
+.textprewed>h2{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    transform: translate(05%);
+    color: #fff;
+}
+
+.textprewed>ol>li{
+    line-height: 2.5;
+    transform: translate(05%);
+  list-style: none;
+    color: white;
+}
+.Photography{
+    margin-top: 10px;
+    color: white;
+    position: relative;
+    display:flex;
+    padding-left: 70px;
+    list-style: none;
+}
+.Photography>li{
+    margin-bottom: 10px;
+}
+.Photography>img{
+    padding-right: 05px;
+}
+.prefooter>img{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+#nav1{
+    display: none;
+}
+.preweddingbutton{
+    background-color: #007bff;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    padding: 5px 35px;
+    border-radius: 5px;
+    margin-left: 70px;
+    transition: 0.3s;
+}
+.preweddingbutton:hover{
+    color: #007bff;
+    background-color: white;
+    text-decoration: none;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens, e.g., tablets */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+    }
+
+    .card1 {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .text {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .droneicon > img,
+    .cinematographyicon > img,
+    .cameraicon > img,
+    .wedding > img,
+    .prewedding > img,
+    .corporate > img,
+    .imageprewedd > img,
+    .prefooter > img {
+        margin-left: auto; /* Center images for smaller screens */
+        margin-right: auto;
+        display: block;
+        width: 70%; /* Adjust image width */
+    }
+
+    .text > h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .text > h3 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .titlewe {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .imageprewedd > img {
+        width: 100%; /* Adjust image width */
+        float: none; /* Reset float */
+    }
+
+    .textprewed > h2 {
+        padding-top: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .textprewed > ol > li {
+        transform: none; /* Reset transform */
+    }
+
+    .Photography {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    #nav > h3 {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    #nav > button {
+        margin-right: 20px; /* Adjust margin for smaller screens */
+        padding: 6px 12px; /* Adjust padding for smaller screens */
+        font-size: smaller; /* Adjust font size for smaller screens */
+    }
+
+    .prefooter > img {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #nav > button {
+        display: block;
+    }
+
+    #menu.open {
+        display: flex;
+    }
+
+    /* Adjustments for smaller screens */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .carousel {
+        width: 340px;
+        height: 200px;
+    }
+
+    .carousel-item > div {
+        height: auto;
+    }
+
+    .text {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center; /* Center text */
+        transform: translate(-75%, -280%);
+    }
+
+    .text > h1 {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .text > h3 {
+        margin-top: -05px;
+        text-align: center;
+        font-size: 9px;
+    }
+
+    .titlewe {
+        padding: 5px;
+        text-align: center; /* Center title */
+    }
+
+    .droneicon > img,
+    .cinematographyicon > img,
+    .cameraicon > img,
+    .wedding > img,
+    .prewedding > img,
+    .corporate > img,
+    .imageprewedd > img,
+    .prefooter > img {
+        width: 40px;
+        display: block; /* Center image */
+        margin: 0 auto; /* Center image */
+    }
+
+    .droneicon > p,
+    .cinematographyicon > p,
+    .cameraicon > p {
+        text-align: center;
+        font-size: 12px;
+        width: 70%;
+        margin: 0 auto; /* Center text */
+    }
+
+    .droneicon > h3,
+    .cinematographyicon > h3,
+    .cameraicon > h3 {
+        font-size: 17px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto; /* Center title */
+    }
+
+    .Photography {
+        padding-left: 20px;
+        text-align: center; /* Center list */
+    }
+
+    #nav1 > h3 {
+        margin-top: 21px;
+        padding-left: 15px;
+        font-size: 16px;
+        text-align: center; /* Center navigation */
+    }
+
+    #nav1 > button {
+        background-color: #000;
+        color: #fff;
+        margin-bottom: 10px;
+        margin-right: 10px; /* Adjust margin */
+        padding: 4px 8px;
+        font-size: x-small;
+        float: none; /* Reset float */
+    }
+
+    .prefooter > img {
+        margin-top: 10px;
+        float: none; /* Reset float */
+        display: block; /* Center image */
+        margin: 0 auto; /* Center image */
+        width: 90%;
+        height: auto;
+    }
+
+    .bg-white.p-5.rounded-lg.shadow {
+        width: 90%;
+        transform: translate(10px, 0px);
+        margin: 0 auto; /* Center container */
+    }
+
+    .row.text-center.align-items-end {
+        width: 100%;
+        text-align: center; /* Center text */
+    }
+
+    .textprewed {
+        width: 90%;
+        height: 400px;
+        margin: 0 auto; /* Center container */
+        text-align: center; /* Center text */
+    }
+
+    .textprewed > h2 {
+        font-size: 20px;
+    }
+
+    .Photography {
+        padding-left: 20px;
+        text-align: center; /* Center list */
+    }
+}
+
+.footer {
+    background: #f3f3f3;
+  }
+  
+  .footer .box-container {
+    display: -ms-grid;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #222;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .footer .box-container .box a {
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #000000;
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  .footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #000000;
+  }
+  
+  .footer .box-container .box form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #222;
+    margin: 1rem 0;
+    text-transform: none;
+  }
+  .footer .box-container .box form input[type="submit"] {
+    width: 100%;
+    border:solid 2px black;
+    padding: 1rem 1.2rem;
+    font-size: 1.0rem;
+  }
+  
+  .footer .box-container .box .payment {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  .credit {
+    text-align: center;
+    background: #000000;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  
