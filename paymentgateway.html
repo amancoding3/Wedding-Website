@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="paymentgateway.css">
+
+</head>
+<body>
+    <div id="nav">
+        <h3><a href="Untitled-1.html"><b>TQL</b>STUDIO</h3></a>
+        <h3><a class='btn btn-portfolio'  href='portfolio.html'><b>Studio</b></h3></a>
+        <h3><a class='btn btn-services'  href='services.html'><b>Services</b></h3></a>
+        <button><a class='btn btn-contact'  href='contact.html'>Booking/Contact</button></a>
+    </div>
+
+<div class="container">
+
+    <form action="https://formsubmit.co/contact.catcreator@gmail.com" name="myform" method="POST" id="fcf-form-id" class="fcf-form-class">
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Thankyou.html">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="john deo" name="name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@example.com" name="email">
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" placeholder="room - street - locality" name="address">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="Ahmedabad" name="city">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="Gujarat" name="state">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" placeholder="123 456" name="zipcode">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. john deo">
+                </div>
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    </form>
+
+</div>    
+
+ <!-- footer section starts  -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="Untitled-1.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="portfolio.html"> <i class="fas fa-arrow-right"></i> Studio</a>
+            <a href="services.html"> <i class="fas fa-arrow-right"></i> Services</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="https://formsubmit.co/contact.catcreator@gmail.com" method="POST">
+                <input type="email" placeholder="enter your email" name="email" required>
+                <input type="submit" value="Subscribe" class="btn">
+            </form>
+            <img src="card_img.png" class="payment" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">Created by Amaan Kirmani | AbdulAhad Mansuri | Aman Ansari | all rights reserved!</section>
+
+<!-- footer section ends -->
+<script src="paymentgateway.js"></script>
+</body>
+</html>
